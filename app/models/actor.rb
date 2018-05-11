@@ -10,6 +10,7 @@ class Actor < ActiveRecord::Base
   def list_roles
     self.characters.collect do |character|
       [character.name, Show.find_by(id: character.show_id).name].join(' - ')
+    end
   end
 
 end
