@@ -7,4 +7,7 @@ class Actor < ActiveRecord::Base
     [self.first_name, self.last_name].join(' ')
   end
 
+  def list_roles
+  end
+
 end
